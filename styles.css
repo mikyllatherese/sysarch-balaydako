@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* -----------HEADER------------ */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -63,6 +64,7 @@ nav ul li a {
     transition: all 0.3s ease-in-out;
 }
 
+/* -----------HERO------------ */
 .hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
     text-align: center;
@@ -112,7 +114,6 @@ nav ul li a {
     transform: scale(1.1);
 }
 
-
 .btn {
     display: inline-block;
     background: #4CAF50;
@@ -122,50 +123,136 @@ nav ul li a {
     margin-top: 20px;
 }
 
+
+/* -----------INTRO------------ */
 .intro {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; 
     background-color: #e6f2ff;  
+    padding-bottom: 70px;
 }
 
 .intro-header-body {
     width: 60%;
     text-align: left;
-    width: 500px;
+    max-width: 600px; 
     margin-left: 50px;
     padding-top: 60px;
 }
 
-.intro, .about {
-    padding: 40px 20px;
-    text-align: center;
+.header-intro-container h2 {
+    font-size: 60px; 
+    font-weight: bold;
+    margin-bottom: 30px; 
+    position: relative;
+    display: inline-block; 
 }
 
-.header-intro-container {
-    font-size: 35px;
-    font-weight: bold;
-    white-space: nowrap;  
-    overflow: hidden; 
+.header-intro-container h2::after {
+    content: "";
+    display: block;
+    width: 120px; 
+    height: 5px;
+    background-color: #4CAF50; 
+    margin-top: 2px; 
 }
 
 .body-intro-container {
-    font-size: 20px;
-    line-height: 1.6;
-    padding-bottom: 60px;
-    width: 700px;
+    max-width: 600px; 
+    line-height: 1.6; 
+    font-size: 18px;
 }
 
-.about {
-    background-color: #4CAF50;
+.buttons-intro {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.buttons-intro-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-top: 130px; 
+}
+
+.buttons .btn {
+    display: inline-block; 
+    width: auto;  
+    padding: 15px 30px; 
+    text-align: center;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.buttons-intro-buttons .btn {
+    display: inline-block;  
+    background-color: #4CAF50; 
     color: white;
+    padding: 15px 30px; 
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    width: auto; 
 }
 
-.header-about-container {
-    font-size: 35px;
+.buttons-intro-buttons .btn:hover {
+    background-color: #45a049; 
+}
+
+/* -----------ABOUT------------ */
+.about-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #4CAF50; 
+    color: white;
+    padding: 40px;
+}
+
+.text-container {
+    width: 50%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 20px;
+}
+
+.header-about-container h2 {
+    font-size: 45px;
+    line-height: 50px;
     font-weight: bold;
-    white-space: nowrap;  
-    overflow: hidden;   
+    position: relative;
+    display: inline-block;
+}
+
+.header-about-container h2::after {
+    content: "";
+    display: block;
+    width: 120px; 
+    height: 4px;
+    background-color: white;
+    margin: 8px 0; 
+}
+
+.body-about-container p {
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.map-container {
+    width: 50%;
+    height: 400px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .buttons-intro-buttons {
@@ -184,6 +271,7 @@ nav ul li a {
 
 }
 
+/* -----------FOOTER------------ */
 .buttons .btn {
     display: block;
     margin: 10px auto;
