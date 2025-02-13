@@ -128,7 +128,7 @@ nav ul li a {
 .intro {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align content to the top */
+    align-items: flex-start; 
     background-color: #e6f2ff;  
     padding-bottom: 70px;
 }
@@ -136,57 +136,67 @@ nav ul li a {
 .intro-header-body {
     width: 60%;
     text-align: left;
-    max-width: 600px; /* Prevent excessive stretching */
+    max-width: 600px; 
     margin-left: 50px;
     padding-top: 60px;
 }
 
 .header-intro-container h2 {
-    font-size: 60px; /* Keep the same font size */
+    font-size: 60px; 
     font-weight: bold;
-    margin-bottom: 30px; /* Space below the heading */
+    margin-bottom: 30px; 
     position: relative;
-    display: inline-block; /* Makes sure underline is sized to text */
+    display: inline-block; 
 }
 
 .header-intro-container h2::after {
     content: "";
     display: block;
-    width: 100px; /* Increase width for better visibility */
-    height: 3px;
-    background-color: #4CAF50; /* Green color like buttons */
-    margin-top: 5px; /* Space between text and underline */
+    width: 120px; 
+    height: 5px;
+    background-color: #4CAF50; 
+    margin-top: 2px; 
 }
 
 .body-intro-container {
-    max-width: 600px; /* Ensures text doesn't stretch too wide */
-    line-height: 1.6; /* Keep the same line height */
+    max-width: 600px; 
+    line-height: 1.6; 
     font-size: 18px;
 }
 
 .buttons-intro {
     display: flex;
-    justify-content: center; /* Centers the buttons container */
-    margin-top: 20px; /* Adjust spacing */
+    justify-content: center; 
+    margin-top: 20px; 
 }
 
 .buttons-intro-buttons {
     display: flex;
-    flex-direction: column; /* Stacks buttons vertically */
-    align-items: center; /* Align buttons to the left */
-    justify-content: center;
-    margin-top: 80px; /* Ensure proper alignment */
+    flex-direction: column;
+    align-items: flex-start;  
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-top: 130px; 
+}
+
+.buttons .btn {
+    display: inline-block; 
+    width: auto;  
+    padding: 15px 30px; 
+    text-align: center;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .buttons-intro-buttons .btn {
-    display: block;
+    display: inline-block;  
     background-color: #4CAF50; 
     color: white;
-    padding: 12px 0; /* Adjust vertical padding */
+    padding: 15px 30px; 
     text-decoration: none;
     font-size: 16px;
     text-align: center;
-    width: 100%;
+    width: auto; 
 }
 
 .buttons-intro-buttons .btn:hover {
@@ -204,9 +214,9 @@ nav ul li a {
 }
 
 .text-container {
-    width: 50%; /* Adjusts width for better stacking */
+    width: 50%; 
     display: flex;
-    flex-direction: column; /* Stacks title and text */
+    flex-direction: column; 
     justify-content: center;
     padding: 20px;
 }
@@ -222,10 +232,10 @@ nav ul li a {
 .header-about-container h2::after {
     content: "";
     display: block;
-    width: 120px; /* Width of underline */
+    width: 120px; 
     height: 4px;
     background-color: white;
-    margin: 8px 0; /* Creates spacing for underline */
+    margin: 8px 0; 
 }
 
 .body-about-container p {
