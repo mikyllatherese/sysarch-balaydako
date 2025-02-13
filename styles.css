@@ -1,111 +1,212 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balay Dako - Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: #2E7D32;
-            color: white;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        .hero {
-            background: url('hero-image.jpg') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .btn {
-            display: inline-block;
-            background: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .intro, .about {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .buttons .btn {
-            display: block;
-            margin: 10px auto;
-            width: 200px;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #2E7D32;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">Balay Dako</div>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Members</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="hero">
-        <h1>MAKES YOU FEEL HOME AGAIN</h1>
-        <p>Your Partner in Comfort and Care.</p>
-        <a href="#" class="btn">LOG IN / SIGN UP</a>
-    </section>
-    
-    <section class="intro">
-        <h2>Call it your home</h2>
-        <p>Owning a home is more than just having a place to stay—it’s about creating a space where you feel truly at home...</p>
-        <div class="buttons">
-            <a href="#" class="btn">News and Announcements</a>
-            <a href="#" class="btn">Member Announcements</a>
-            <a href="#" class="btn">Upcoming Events</a>
-        </div>
-    </section>
-    
-    <section class="about">
-        <h2>All About Our Homeowner's Organization</h2>
-        <p>Our homeowner's organization is dedicated to providing resources, support, and a sense of community...</p>
-    </section>
-    
-    <footer>
-        <p>Copyright © 2025 Balay Dako</p>
-        <a href="#">Terms and Conditions</a>
-        <a href="#">Privacy Policy</a>
-    </footer>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    color: white;
+}
+
+.header-logo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.logo {
+    color: #4CAF50;
+    line-height: 1;
+}
+
+.nav-bar {
+    margin-right: 50px; 
+}
+
+nav {
+    background: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #4CAF50;
+    padding: 15px 15px 15px 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, rgba(119, 221, 102, 0.4), rgba(30, 30, 30, 0.7)),
+                url('/images/image\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    margin-top: 150px;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 25px;
+}
+
+.btn-hero {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-hero:hover {
+    background-color: darkgreen;
+    color: white; 
+    transform: scale(1.1);
+}
+
+
+.btn {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6f2ff;  
+}
+
+.intro-header-body {
+    width: 60%;
+    text-align: left;
+    width: 500px;
+    margin-left: 50px;
+    padding-top: 60px;
+}
+
+.intro, .about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header-intro-container {
+    font-size: 35px;
+    font-weight: bold;
+    white-space: nowrap;  
+    overflow: hidden; 
+}
+
+.body-intro-container {
+    font-size: 20px;
+    line-height: 1.6;
+    padding-bottom: 60px;
+    width: 700px;
+}
+
+.about {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.header-about-container {
+    font-size: 35px;
+    font-weight: bold;
+    white-space: nowrap;  
+    overflow: hidden;   
+}
+
+.buttons-intro-buttons {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 100px;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+.buttons-intro-buttons buttons:hover {
+    padding-right: 100px;
+
+}
+
+.buttons .btn {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-right: 100px;
+    white-space: nowrap;  
+    overflow: hidden; 
+    padding-right: 150px;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.buttons .btn:hover {
+    background-color: darkgreen; 
+    color: white; 
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color:#4CAF50;
+}
