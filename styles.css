@@ -293,8 +293,33 @@ nav ul li a {
     transform: scale(1.1);
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    color:#4CAF50;
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 14px;
 }
+
+.footer-copyright {
+    color: #4CAF50;
+    font-size: 16px;
+}
+
+.footer-body {
+    margin: 5px 0;
+    color: gray;
+}
+
+.footer a {
+    font-weight: normal; /* Prevent bold */
+    color: gray;
+}
+
+.footer a:hover {
+    text-decoration: none; /* No effect on hover */
+}
+
+
