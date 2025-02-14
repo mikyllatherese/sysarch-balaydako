@@ -314,12 +314,12 @@ nav ul li a {
 }
 
 .footer a {
-    font-weight: normal; /* Prevent bold */
+    font-weight: normal; 
     color: gray;
 }
 
 .footer a:hover {
-    text-decoration: none; /* No effect on hover */
+    text-decoration: none;
 }
 
 
