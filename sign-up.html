@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header-container">
+        <div class="header-logo">
+            <img src="images/logo.png">
+            <h1 class="logo">Balay<br>Dako</h1>
+        </div>
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="members.html">MEMBERS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Sign Up Section -->
+    <div class="container">
+        <h2>Balay Dako</h2>
+        <div class="signup-container">
+            <form action="#" method="POST">
+                <div class="name-container">
+                    <input type="text" name="first_name" placeholder="First name" required>
+                    <input type="text" name="last_name" placeholder="Last name" required>
+                </div>
+
+                <label>Birthday</label>
+                <div class="birthday-container">
+                    <select name="month">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                    <select name="day">
+                        <!-- Options for days 1-31 -->
+                        <script>
+                            for (let i = 1; i <= 31; i++) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script>
+                    </select>
+                    <select name="year">
+                        <!-- Options for years 2025-1900 -->
+                        <script>
+                            for (let i = 2025; i >= 1900; i--) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script>
+                    </select>
+                </div>
+
+                <label>Gender</label>
+                <div class="gender-container">
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Male"> Male
+                </div>
+
+                <input type="text" name="email" placeholder="Email or phone number" required>
+                <input type="password" name="password" placeholder="New password" required>
+
+                <button type="submit">Sign up</button>
+                <p><a href="index.html">Already have an account?</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
