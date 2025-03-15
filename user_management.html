@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>User Management</title>
+    <link rel="stylesheet" href="user_management_style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo_item">
+        <img src="logo.png" alt="">BalayDako
+      </div>
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class="bx bx-bell"></i>
+        <img src="profile.jpg" alt="" class="profile" />
+      </div>
+    </nav>
+    
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <li class="item">
+            <div class="nav_link">
+              <span class="navlink_icon"><i class="bx bx-home-alt"></i></span>
+              <span class="navlink">Home</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="nav_link">
+              <span class="navlink_icon"><i class='bx bx-user'></i></span>
+              <span class="navlink">User<br>Management</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="nav_link">
+              <span class="navlink_icon"><i class='bx bx-party' ></i></span>
+              <span class="navlink">Announcements</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="nav_link">
+              <span class="navlink_icon"><i class='bx bx-wallet' ></i></i></i></span>
+              <span class="navlink">Payments &<br> Billing</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="nav_link">
+              <span class="navlink_icon"><i class='bx bxs-report'></i></i></span>
+              <span class="navlink">Property &<br> Management</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="nav_link">
+              <span class="navlink_icon"><i class='bx bx-wallet' ></i></i></i></span>
+              <span class="navlink">Documents &<br> Reports</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="nav_link">
+              <span class="navlink_icon"><i class='bx bx-group' ></i></i></i></span>
+              <span class="navlink">Community <br> Engagement</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="nav_link">
+              <span class="navlink_icon"><i class='bx bx-shield-alt'></i></i></i></span>
+              <span class="navlink">Security &<br> Visitor Management</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="nav_link">
+              <span class="navlink_icon"><i class='bx bx-message-detail' ></i></span>
+              <span class="navlink">Feedback</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="nav_link">
+              <span class="navlink_icon"><i class='bx bx-cog' ></i></span>
+              <span class="navlink">Settings</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="nav_link">
+              <span class="navlink_icon"><i class='bx bx-log-out' ></i></i></span>
+              <span class="navlink">Log Out</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Dashboard -->
+        <div class="dashboard-container">
+            <h2>User Management</h2>
+        
+            <div class="user-section">
+                <h3>Admin</h3>
+                <div class="user-group">
+                    <div class="user-card">
+                        <i class="bx bx-user"></i>
+                        <p>Admin</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="user-section">
+                <h3>Staff</h3>
+                <div class="user-group">
+                    <div class="user-card">
+                        <i class="bx bx-user"></i>
+                        <p>Iris Tumakay</p>
+                    </div>
+                    <div class="user-card">
+                        <i class="bx bx-user"></i>
+                        <p>Kim Dwight Madula</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="user-section">
+                <h3>Homeowner</h3>
+                <div class="user-group">
+                    <div class="user-card">
+                        <i class="bx bx-user"></i>
+                        <p>Mikylla Therese Dinaunao</p>
+                    </div>
+                    <div class="user-card">
+                        <i class="bx bx-user"></i>
+                        <p>Allana Felize Salar</p>
+                    </div>
+                    <div class="user-card">
+                        <i class="bx bx-user"></i>
+                        <p>Marcelo Cagara Jr.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <button class="add-staff-btn">Add Staff</button>
+        </div>                  
+    </div>
+    
+    <footer class="footer">
+        Copyright © 2025 Balay Dako
+    </footer>      
+
+    <script src="user_management_script.js"></script>
+  </body>
+</html>
