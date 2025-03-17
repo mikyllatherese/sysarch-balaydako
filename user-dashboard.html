@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>BalayDako</title>
-    <link rel="stylesheet" href="dashboard-style.css" />
+    <link rel="stylesheet" href="user-dashboard.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -33,12 +33,6 @@
           </li>
           <li class="item">
             <div class="nav_link">
-              <span class="navlink_icon"><i class='bx bx-user'></i></span>
-              <span class="navlink">User<br>Management</span>
-            </div>
-          </li>
-          <li class="item">
-            <div class="nav_link">
               <span class="navlink_icon"><i class='bx bx-party' ></i></span>
               <span class="navlink">Announcements</span>
             </div>
@@ -46,13 +40,13 @@
           <li class="item">
             <div class="nav_link">
               <span class="navlink_icon"><i class='bx bx-wallet' ></i></i></i></span>
-              <span class="navlink">Payments &<br> Billing</span>
+              <span class="navlink">Payments &<br> Dues</span>
             </div>
           </li>
           <li class="item">
             <div class="nav_link">
               <span class="navlink_icon"><i class='bx bxs-report'></i></i></span>
-              <span class="navlink">Property &<br> Management</span>
+              <span class="navlink">Facility<br> Reservations</span>
             </div>
           </li>
           <li class="item">
@@ -64,25 +58,19 @@
           <li class="item">
             <div class="nav_link">
               <span class="navlink_icon"><i class='bx bx-group' ></i></i></i></span>
-              <span class="navlink">Community <br> Engagement</span>
+              <span class="navlink">Community <br> Forum</span>
             </div>
           </li>
           <li class="item">
             <div class="nav_link">
               <span class="navlink_icon"><i class='bx bx-shield-alt'></i></i></i></span>
-              <span class="navlink">Security &<br> Visitor Management</span>
+              <span class="navlink">Security &<br> Visitors</span>
             </div>
           </li>
           <li class="item">
             <div class="nav_link">
               <span class="navlink_icon"><i class='bx bx-message-detail' ></i></span>
-              <span class="navlink">Feedback</span>
-            </div>
-          </li>
-          <li class="item">
-            <div class="nav_link">
-              <span class="navlink_icon"><i class='bx bx-cog' ></i></span>
-              <span class="navlink">Settings</span>
+              <span class="navlink">Service <br> Requests</span>
             </div>
           </li>
           <li class="item">
@@ -100,31 +88,9 @@
         <!-- Dashboard -->
         <div class="dashboard-container">
             <h2>Dashboard</h2>
-            <div class="dashboard">
-              <div class="dashboard-card">
-                <h3>Total Registered Homeowners:</h3>
-                <p>3</p>
-              </div>
-              <div class="dashboard-card">
-                <h3>Total Pending Requests:</h3>
-                <p>2</p>
-              </div>
-              <div class="dashboard-card">
-                <h3>Pending Visitor Approvals:</h3>
-                <p>3</p>
-              </div>
-              <div class="dashboard-card">
-                <h3>Recent Security Reports:</h3>
-                <p>1</p>
-              </div>
-              <div class="dashboard-card">
-                <h3>Vehicle Registrations:</h3>
-                <p>4</p>
-              </div>
-            </div>
-          </div>          
+        </div>          
 
-        <!-- Members Section -->
+        <!-- Recent Payment Section -->
         <div class="card">
             <h2 class="card-title"><i class='bx bx-group'></i></i> RECENT PAYMENTS</h2>
             <ul class="list">
@@ -147,6 +113,30 @@
                 <li>Garage Sale Weekend <span>May 1 - 2, 2025</span></li>
                 <li>Safety and Security Seminar <span>June 15, 2025</span></li>
             </ul>
+        </div>
+
+        <!-- Facility Section -->
+        <div class="card">
+            <h2 class="card-title"><i class='bx bx-buildings'></i></i> FACILITY RESERVATIONS</h2>
+            <table class="facility-table">
+                <tbody>
+                    <tr>
+                        <td>Basketball Court</td>
+                        <td>March 1, 2025</td>
+                        <td class="confirmed">CONFIRMED</td>
+                    </tr>
+                    <tr>
+                        <td>Clubhouse</td>
+                        <td>March 15, 2025</td>
+                        <td class="pending">PENDING</td>
+                    </tr>
+                    <tr>
+                        <td>Swimming Pool</td>
+                        <td>March 20, 2025</td>
+                        <td class="confirmed">CONFIRMED</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     

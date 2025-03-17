@@ -141,7 +141,7 @@ html, body {
 /* Main Content */
 .main-content {
   margin-left: 260px;
-  padding: 50px;
+  padding: 50px 50px 0px 50px;
   width: calc(100% - 260px);
   display: flex;
   flex-direction: column;
@@ -154,9 +154,8 @@ html, body {
 
 /* Dashboard */
 .dashboard-container {
-    padding: 20px;
+    padding: 20px 0px 10px;
     border-radius: 8px;
-    margin-bottom: 20px;
   }
   
   .dashboard-container h2 {
@@ -240,6 +239,36 @@ html, body {
 .list li:nth-child(n+3) {
     border-bottom: none;
 }
+
+.facility-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.facility-table th, .facility-table td {
+    padding: 12px 12px 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.facility-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.facility-table td.confirmed {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.facility-table td.pending {
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+}
+
 
 /* Footer */
 .footer {
